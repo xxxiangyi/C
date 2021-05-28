@@ -38,8 +38,12 @@ int fun(int i,int j)
         return 1;
     return 0;
 }
-int main()
+int main(int argc, char ** argv)
 {
+    printf("This is a game! argc=%d\n", argc);
+    for(int i = 0; i < argc; i++){
+        printf("%s\n", argv[i]);
+    }
     int i,j,coordinate,mine,sum,flag;
 loop:
     mine=0;
